@@ -12,7 +12,6 @@ import (
 	"net/http"
 	"net/url"
 	"path"
-	"strings"
 
 	"github.com/hyperledger/aries-framework-go/pkg/doc/did"
 	vdrapi "github.com/hyperledger/aries-framework-go/pkg/framework/aries/api/vdr"
@@ -23,7 +22,7 @@ const (
 	VersionIDOpt = "versionID"
 	// VersionTimeOpt version time opt this option is not mandatory.
 	VersionTimeOpt = "versionTime"
-	didLDJson      = "application/did+ld+json"
+	didLDJson      = "application/ld+json"
 )
 
 // resolveDID makes DID resolution via HTTP.
